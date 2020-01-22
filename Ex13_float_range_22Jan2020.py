@@ -4,7 +4,15 @@ class float_range:
     def __init__(self,*args):
 
         if len(args) == 3:
-            (self.start, self.stop,self.step) = args
+            self.start, self.stop, self.step = args # (*args,)
+        elif len(args) == 2:
+            self.start, self.stop = args
+            self.step = 1
+        elif len(args) == 1:
+            self.start, self.step = (0, 1)
+            self.stop = args[0]
+        else:
+            raise TypeError("Must be called with 1,2, or 3 arguments")
     
     def __iter__(self):
         return self
@@ -16,6 +24,8 @@ class float_range:
             return num
         else:
             raise StopIteration
+ 
+        
             
 
 
@@ -33,7 +43,7 @@ if __name__ == "__main__":
 # 1.5
 # 2.0
 
-    print(list(float_range(3.5, 0, -1)))
+    # print(list(float_range(3.5, 0, -1)))
     # [3.5, 2.5, 1.5, 0.5]
     for n in float_range(0.0, 3.0):
         print(n)
