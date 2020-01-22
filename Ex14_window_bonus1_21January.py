@@ -1,16 +1,22 @@
-
+from itertools import tee
 
 
 def window(numbers, calkowita):
     a = []
     if calkowita == 0 : return
     else:
-        if not isinstance(numbers,list): numbers = list(numbers)
+        if not isinstance(numbers,list): 
+            numbers, numbers2_it = tee(numbers)
+            numbers2_it = list(numbers2_it)
+        else:
+            numbers2_it = numbers
+            numbers = iter(numbers)
         licznik = 0 
-        for i,el in enumerate(numbers):
-            if licznik == (len(numbers)-calkowita+1):
+        for i,el in enumerate(numbers2_it):
+            if licznik == (len(numbers2_it)-calkowita+1):
                 break
-            element = tuple(numbers[i:i+calkowita])
+            element = tuple(numbers2_it[i:i+calkowita])
+            print(next(numbers))
             yield element
             licznik +=1
             
