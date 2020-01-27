@@ -4,7 +4,8 @@ class window:
 
     def __init__(self,lista,number):
 
-        self.lista = iter(lista) if isinstance(lista, list) else lista
+        # self.lista = iter(lista) if isinstance(lista, list) else lista
+        self.lista = lista
         self.lista, self.copy_lista  = tee(self.lista,2)
         self.copy_lista = list(self.copy_lista)
         self.wielkosc = len(self.copy_lista)
@@ -18,18 +19,19 @@ class window:
         return self
 
     def __next__(self):
-        if self.number and self.first_el<len(self) and self.number>1:
-            out = (self.last_el,) + tuple(next(self.lista) for _ in range(self.number-1))
-            self.last_el = out[-1]
+        if self.number and self.first_el<len(self):
+            out = tuple(islice(self.copy_lista,self.first_el,self.first_el+self.number))
+            if len(out) <self.number:
+                raise StopIteration()    
             self.first_el +=1
             return out
-        elif self.number and self.first_el<=len(self)+1 and self.number==1:
-            out = (self.last_el,)
-            self.last_el = next(self.lista) if self.first_el<=len(self) else None
-            if self.first_el == len(self): 
-                raise StopIteration()
-            self.first_el +=1
-            return out
+        # elif self.number and self.first_el<=len(self)+1 and self.number==1:
+        #     out = (self.last_el,)
+        #     self.last_el = next(self.lista) if self.first_el<=len(self) else None
+        #     if self.first_el == len(self): 
+        #         raise StopIteration()
+        #     self.first_el +=1
+        #     return out
         elif self.number==0 and self.first_el<1:
             raise StopIteration()
         else:
@@ -80,5 +82,6 @@ if __name__ == "__main__":
     print(next(window(numbers, 3)))
     inputs = (n**2 for n in [1, 2, 3, 4, 5])
     iterable = window(inputs, 2) #(1, 4)
+    print(next(iterable))
     print(next(iterable))
     print(next(inputs)) # 9
