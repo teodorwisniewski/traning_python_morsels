@@ -17,8 +17,6 @@ from collections import deque
 
 def window(numbers,okno, *,fillvalue=None):
     out = deque(maxlen=okno) # przy dodawniu wujebie pierwszy i doda na koncu
-    # if fillvalue:
-    #      fillvalue=None
     for item in numbers:
         out.append(item)
         if okno and len(out) == okno:
