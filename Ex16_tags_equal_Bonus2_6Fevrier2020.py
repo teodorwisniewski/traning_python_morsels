@@ -9,12 +9,17 @@ import re
 #     name, *attributes = html_tag.casefold()[1:-1].split()
 #     attributes_dict = dict(el.split("=") if len(el.split("="))>1 else [el,None]  for el in reversed(attributes))
 #     return name, attributes_dict
+def _parse_attributes(html_attribute):
+    key,_,value = html_attribute.partition("=")
+    return key,value
+
+
 def _parse_tag(html_tag):
 #     """Return tuple of tag name and attrivutes """
     name, *attributes = html_tag.casefold()[1:-1].split()
     attributes_dict = {}
     for a in attributes:
-        key, value = tuple(a.split("=")) if len(a.split("="))>1 else (a,None)
+        key, value = _parse_attributes(a)
         attributes_dict.setdefault(key,value)
 
     return name, attributes_dict
