@@ -6,9 +6,7 @@ import re
 
 def _parse_tag(html_tag):
     """Return tuple of tag name and attrivutes """
-    html_tag = html_tag.casefold()[1:-1].split()
-    name = html_tag[0]
-    attributes =  html_tag[1:]
+    name, *attributes = html_tag.casefold()[1:-1].split()
     return name, attributes
 
 def tags_equal(str_1,str_2):

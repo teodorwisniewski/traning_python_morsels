@@ -6,16 +6,13 @@ import re
 
 def _parse_tag(html_tag):
     """Return tuple of tag name and attrivutes """
-    html_tag = html_tag.casefold()[1:-1].split()
-    name = html_tag[0]
-    attributes =  html_tag[1:]
-    return name, attributes
+    name, *attributes = html_tag.casefold()[1:-1].split()
+    attributes_dict = dict(el.split("=") if len(el.split("="))>1 else [el,None]  for el in reversed(attributes))
+    return name, attributes_dict
 
 def tags_equal(str_1,str_2):
     """Return True if the given html open tags represent the same thing """
-    name1, attrubutes1 = _parse_tag(str_1)
-    name2, attrubutes2 = _parse_tag(str_2)
-    return name1==name2 and set(attrubutes1) == set(attrubutes2)
+    return _parse_tag(str_1) == _parse_tag(str_2)
 
 
 
