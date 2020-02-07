@@ -1,46 +1,28 @@
-from pprint import pprint
-from collections import Counter
 
-def _cleaning_duplicates(aux_str: list):
-    out = []
-    lista_attributes = [el.split("=")[0] for el in aux_str ]
-    d = dict.fromkeys(lista_attributes, True)
-    for el in lista_attributes:
-        if d[el]:
-            for el2 in aux_str:
-                if  el in el2:
-                    out.append(el2)
-                    d[el] = False
-                    break
-    return " ".join(out)
-    
+import shlex
+
+def parse_attributes(attribute_tag):
+    key,_,value = attribute_tag.partition("=")
+    return key, value
 
 
-    
-
-
-
-def tags_equal(str_1,str_2):
-    str_1 = _cleaning_duplicates(str_1.casefold().split())
-    str_2 = _cleaning_duplicates(str_2.casefold().split())
-
-    if len(str_1.split())>=len(str_2.split()):
-        zbior = str_1[1:-1].casefold().split() 
-        z2 = str_2[1:-1].casefold()
+def parse_html(html_tag):
+    if len(html_tag.split())>1:
+        name, attributes_str = html_tag[1:-1].casefold().split(maxsplit=1)  
+        attributes = {}
+        for a in shlex.split(attributes_str):
+            key,value = parse_attributes(a)
+            attributes.setdefault(key,value)
     else:
-        str_1,str_2 = str_2,str_1
-        zbior = str_1[1:-1].casefold().split() 
-        z2 = str_2[1:-1].casefold() 
-
-    out_bool = []
-    for el in zbior:
-        out_bool.append(el in z2)
-    return all(out_bool)
+        name, attributes = [html_tag[1:-1].casefold(), None]
+    
+    return name, attributes
 
 
 
-
-
+def tags_equal(str1,str2):
+    """returns boolean of comparison of equality between two html tags """
+    return parse_html(str1) == parse_html(str2)
 
 
 if __name__=='__main__':
@@ -75,3 +57,10 @@ if __name__=='__main__':
         '<input type=hidden>',
     ))
 # True
+# True
+    print(tags_equal("<input value='hello there'>", '<input value="hello there">'))
+# True
+    print(tags_equal("<input value=hello>", "<input value='hello'>"))
+# True
+    print(tags_equal("<input value='hi friend'>", "<input value='hi there'>"))
+# False
