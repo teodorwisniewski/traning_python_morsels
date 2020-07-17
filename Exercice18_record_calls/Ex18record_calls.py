@@ -3,20 +3,36 @@ import wrapt
 from collections import namedtuple
 from typing import NamedTuple
 from dataclasses import dataclass
+from collections import namedtuple
+from typing import Any, Optional
+
+
+NO_RETURN = object()
+
 
 @dataclass
-class Call():
+class Call:
     args: tuple
     kwargs: dict
+    return_value: Any = NO_RETURN
+    exception: Optional[BaseException] = None
 
 def record_calls(fun):
 
     @wraps(fun)
     def inner_wrapper(*args,**kwargs):
         inner_wrapper.call_count += 1
-        inner_wrapper.calls.append(Call(args, kwargs))
-        return fun(*args,**kwargs)
-
+        
+        try:
+            return_value = fun(*args,**kwargs)
+            exception = None
+            call = Call(args, kwargs,return_value,exception)
+            inner_wrapper.calls.append(call)
+        except Exception as e:
+            call = Call(args, kwargs,NO_RETURN,e)
+            inner_wrapper.calls.append(call)
+            raise
+        return call.return_value
     inner_wrapper.call_count = 0
     inner_wrapper.calls = []
 
