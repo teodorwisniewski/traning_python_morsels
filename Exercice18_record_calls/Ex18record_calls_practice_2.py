@@ -1,27 +1,25 @@
-from functools import wraps, update_wrapper
-import wrapt
-from collections import namedtuple
+from functools import wraps
+from dataclasses import dataclass
+from typing import Tuple, Dict
 
-# def record_calls(fun):
-#     @wraps(fun)
-#     def inner_wrapper(*args,**kwargs):
-#         inner_wrapper.call_count += 1 
-#         return fun(*args,**kwargs)
-#     inner_wrapper.call_count = 0
-#     return inner_wrapper
+@dataclass
+class Call:
+    args: Tuple
+    kwargs: Dict
 
-class record_calls(wrapt.ObjectProxy):
 
-    def __init__(self,fun):
-        super().__init__(fun)
-        self.call_count = 0
-        self.Call = namedtuple('Call', 'args kwargs')
-        self.calls = []
 
-    def __call__(self,*args,**kwargs):
-        self.call_count += 1
-        self.calls.append(self.Call(args=args, kwargs=kwargs))
-        return self.__wrapped__(*args,**kwargs)        
+def record_calls(fun):
+    @wraps(fun)
+    def inner_wrapper(*args,**kwargs):
+        inner_wrapper.call_count += 1
+        inner_wrapper.calls.append(Call(args,kwargs))
+        return fun(*args,**kwargs)
+    inner_wrapper.call_count = 0
+    inner_wrapper.calls = []
+
+    return inner_wrapper
+
 
 
 
@@ -41,6 +39,10 @@ def greet2(name="world"):
     """
     """Greet someone by their name."""
     print(f"LS503 {name}")
+
+
+
+
 
 
 
