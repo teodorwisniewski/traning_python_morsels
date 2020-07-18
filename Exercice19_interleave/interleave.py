@@ -1,6 +1,6 @@
 
 
-from itertools import zip_longest
+from itertools import zip_longest, chain
 # class interleave:
 
 #     """Iterator that counts upward forever."""
@@ -18,15 +18,19 @@ from itertools import zip_longest
 #         return num
 
 
+
+
+    # out = []
+    # val_to_skip = object()
+    # for elements in zip_longest(*iters,fillvalue=val_to_skip):
+    #     for el in elements: 
+    #         if el is not val_to_skip: 
+    #             yield el
 def interleave(*iters):
-
-    out = []
-    val_to_skip = object()
-    for elements in zip_longest(*iters,fillvalue=val_to_skip):
-        for el in elements: 
-            if el == val_to_skip: continue
-            yield el
-
+    sentinel = object()
+    zipped = zip_longest(*iters,fillvalue=sentinel)
+    flattened = chain.from_iterable(zipped)
+    return (x for x in flattened if x is not sentinel)
 
 
 
@@ -35,7 +39,8 @@ def interleave(*iters):
 if __name__ == "__main__":
 
     numbers = [1, 2, 3, 4]
-    print(list(interleave(numbers, range(5, 9))))
+    for el in interleave(numbers, range(5, 9)):
+        print(el)
 #[1, 5, 2, 6, 3, 7, 4, 8]
     print(list(interleave(numbers, (n**2 for n in numbers))))
 # [1, 1, 2, 4, 3, 9, 4, 16]
