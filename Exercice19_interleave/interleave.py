@@ -26,13 +26,20 @@ from itertools import zip_longest, chain
     #     for el in elements: 
     #         if el is not val_to_skip: 
     #             yield el
-def interleave(*iters):
-    sentinel = object()
-    zipped = zip_longest(*iters,fillvalue=sentinel)
-    flattened = chain.from_iterable(zipped)
-    return (x for x in flattened if x is not sentinel)
+# def interleave(*iters):
+#     sentinel = object()
+#     zipped = zip_longest(*iters,fillvalue=sentinel)
+#     flattened = chain.from_iterable(zipped)
+#     return (x for x in flattened if x is not sentinel)
 
-
+def interleave(*iterables):
+    iterators = [iter(i) for i in iterables]
+    while iterators:
+        for iterator in list(iterators):
+            try:
+                yield next(iterator)
+            except:
+                iterators.remove(iterator)
 
 
 
