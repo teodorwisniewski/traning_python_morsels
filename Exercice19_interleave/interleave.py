@@ -18,12 +18,11 @@
 #         return num
 
 
-def interleave(iter1,iter2):
+def interleave(*iters):
 
     out = []
-    for el1,el2 in zip(iter1,iter2):
-        yield el1
-        yield el2
+    for elements in zip(*iters):
+        for el in elements: yield el
 
 
 
@@ -44,3 +43,7 @@ if __name__ == "__main__":
 #[1, 5, 2, 6, 3, 7, 4, 8]
     print(list(interleave(numbers, (n**2 for n in numbers))))
 # [1, 1, 2, 4, 3, 9, 4, 16]
+
+
+print(interleave([1, 2, 3], [4, 5, 6], [7, 8, 9]))
+[1, 4, 7, 2, 5, 8, 3, 6, 9]
