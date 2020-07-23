@@ -33,13 +33,12 @@ from itertools import zip_longest, chain
 #     return (x for x in flattened if x is not sentinel)
 
 def interleave(*iterables):
-    iterators = [iter(i) for i in iterables]
-    while iterators:
-        for iterator in list(iterators):
-            try:
-                yield next(iterator)
-            except:
-                iterators.remove(iterator)
+    sentinel = object()
+    for elements in zip_longest(*iterables,fillvalue=sentinel):
+        for el in elements:
+            if el is not sentinel:
+                yield el
+
 
 
 
