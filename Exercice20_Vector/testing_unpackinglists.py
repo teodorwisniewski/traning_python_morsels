@@ -1,5 +1,9 @@
 
 import datetime
+import sys
+
+arguments = sys.argv
+filename, pierwszyargument, drugi = sys.argv
 
 today_date = str(datetime.date.today())
 
@@ -12,4 +16,7 @@ year,month,day = splitted_date
 print(f"It is {year}. The day is {day} and the month is {month} ")
 
 # Conclusion: we can unpack lists! It is more readable than spllited_date[0] and so on!
+print(arguments)
 
+print(f"This is filename {filename}")
+print(pierwszyargument,drugi)
