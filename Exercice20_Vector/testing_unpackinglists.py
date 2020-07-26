@@ -3,7 +3,7 @@ import datetime
 import sys
 
 arguments = sys.argv
-filename, pierwszyargument, drugi = sys.argv
+filename, *the_rest = sys.argv
 
 today_date = str(datetime.date.today())
 
@@ -19,4 +19,11 @@ print(f"It is {year}. The day is {day} and the month is {month} ")
 print(arguments)
 
 print(f"This is filename {filename}")
-print(pierwszyargument,drugi)
+print(f"The rest of arguments  {the_rest}")
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+first, *middle, last_one = numbers
+print(first)
+print(middle)
+print(last_one)
