@@ -1,34 +1,46 @@
-
-
-
-
-
-
+from operator import add,sub
+from numbers import Number
 
 class Vector:
 
-    #This is usually done to save memory (if you have one million class instances,
-    # a tuple for each is much less memory intensive than a dictionary for each).
-    #memory efficient feauture to avoir usin inefficient __dict__ to store attributes
     __slots__ = "x","y","z"
 
     def __init__(self,x,y,z):
-        self.x = x
-        self.y = y
-        self.z = z
-
-
+        super().__setattr__("x",x)
+        super().__setattr__("y",y)
+        super().__setattr__("z",z)
 
     def __iter__(self):
-        # it makes vector object also iterable
         yield self.x
         yield self.y
         yield self.z
-
+    
     def __eq__(self,other):
-        if not isinstance(other,Vector):
-            raise TypeError("You are not comparing two vectors!")
         return tuple(self) == tuple(other)
+
+    def __add__(self, other):
+        if not isinstance(other, Vector):
+            return NotImplemented
+        return Vector(*(a + b for a, b in zip(self, other)))
+
+    def __sub__(self,other):
+        if not isinstance(other,Vector): return NotImplemented
+        return Vector(*(a - b for a, b in zip(self, other)))
+
+    def __mul__(self, scalar):
+        if not isinstance(scalar, Number):
+            return NotImplemented
+        return Vector(*(scalar * a for a in self))
+    __rmul__ = __mul__
+
+    def __truediv__(self,scalar):
+        if not isinstance(scalar, Number):
+            return NotImplemented
+        return self.__mul__(1/scalar) 
+
+    def __setattr__(self,name,values):
+        raise AttributeError("Vector objects are immutable")      
+
 
 if __name__ == "__main__":
 
@@ -40,6 +52,11 @@ if __name__ == "__main__":
     print(v == Vector(1, 2, 4))
     print(v == Vector(1, 2, 3))
 
+
+
+    print(v)
+    var = tuple(v)
+    print(var)
 # Vector object is an iterable
     for el in v:
         print(el)
@@ -57,7 +74,8 @@ if __name__ == "__main__":
 #True
     # v3 = v + (1, 2, 3)
     # print(v3)
-
+    spr = Vector(1, 2, 3)*3
+    print(spr)
     print(3 * Vector(1, 2, 3) == Vector(3, 6, 9))
 
     print(Vector(1, 2, 3) * 2 == Vector(2, 4, 6))
