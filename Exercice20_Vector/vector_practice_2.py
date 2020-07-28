@@ -1,45 +1,40 @@
-from operator import add,sub
+
+from dataclasses import dataclass, astuple
 from numbers import Number
 
+
+@dataclass(frozen=True)
 class Vector:
-
     __slots__ = "x","y","z"
-
-    def __init__(self,x,y,z):
-        super().__setattr__("x",x)
-        super().__setattr__("y",y)
-        super().__setattr__("z",z)
+    x: Number
+    y: Number
+    z: Number
 
     def __iter__(self):
-        yield self.x
-        yield self.y
-        yield self.z
-    
-    def __eq__(self,other):
-        return tuple(self) == tuple(other)
+        yield from astuple(self)
 
-    def __add__(self, other):
-        if not isinstance(other, Vector):
-            return NotImplemented
-        return Vector(*(a + b for a, b in zip(self, other)))
+    def __eq__(self,other):
+        if not isinstance(other,Vector): raise TypeError
+        return tuple(self) == tuple(other) 
+
+    def __add__(self,other):
+        if not isinstance(other,Vector): raise TypeError
+        return Vector(*(a+b for a,b in zip(self,other)))        
 
     def __sub__(self,other):
-        if not isinstance(other,Vector): return NotImplemented
-        return Vector(*(a - b for a, b in zip(self, other)))
+        if not isinstance(other,Vector): raise TypeError
+        return Vector(*(a-b for a,b in zip(self,other)))  
 
-    def __mul__(self, scalar):
-        if not isinstance(scalar, Number):
-            return NotImplemented
-        return Vector(*(scalar * a for a in self))
+    def __mul__(self,scalar):
+        if not isinstance(scalar,Number): return NotImplemented
+        return Vector(*(scalar*component for component in self))
+
     __rmul__ = __mul__
 
     def __truediv__(self,scalar):
-        if not isinstance(scalar, Number):
-            return NotImplemented
-        return self.__mul__(1/scalar) 
-
-    def __setattr__(self,name,values):
-        raise AttributeError("Vector objects are immutable")      
+        if not isinstance(scalar,Number): return NotImplemented   
+        return self.__mul__(1/scalar)    
+ 
 
 
 if __name__ == "__main__":
