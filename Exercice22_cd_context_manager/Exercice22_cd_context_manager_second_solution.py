@@ -1,20 +1,39 @@
+
+
+
+
+
+
+from contextlib import contextmanager
 from pathlib import Path
 import os
 
-class cd:
-    def __init__(self,subdirectory_path):
-        self.subdirectory_path = subdirectory_path
+@contextmanager
+def cd(*args):
 
-    def __enter__(self):
-      #  print("Current Working Directory " , os.getcwd())
-        self.main_dir = os.getcwd()
-        os.chdir(os.path.join(self.main_dir,self.subdirectory_path))
-     #   print("Current Working Directory after changing " , os.getcwd())
+    subdirectory = args[0] if len(args)>0 else ""
+    original_dir = os.path.abspath(os.curdir)
+
+    try:
+        if subdirectory == "": 
+            os.mkdir("tmp_16wleaw")
+            os.chdir("tmp_16wleaw")
+        else:
+            os.chdir(subdirectory)
+        yield
+    finally:
+        print("I have just got out of with statement")
+        os.chdir(original_dir)
+        if subdirectory == "": 
+            os.rmdir("tmp_16wleaw")
 
     
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        os.chdir(self.main_dir)
-       # print("__exit__ Current Working Directory " , os.getcwd())
+
+
+
+
+
+
 
 
 
