@@ -1,12 +1,7 @@
-
-
-
-
-
-
 from contextlib import contextmanager
 from pathlib import Path
 import os
+import shutil
 
 @contextmanager
 def cd(*args):
@@ -25,7 +20,7 @@ def cd(*args):
         print("I have just got out of with statement")
         os.chdir(original_dir)
         if subdirectory == "": 
-            os.rmdir("tmp_16wleaw")
+            shutil.rmtree("tmp_16wleaw")
 
     
 
