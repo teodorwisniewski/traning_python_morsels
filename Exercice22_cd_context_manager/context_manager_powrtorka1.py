@@ -3,27 +3,32 @@ from contextlib import contextmanager
 from pathlib import Path
 import os
 import shutil
-from tempfile import mkdtemp
+from tempfile import TemporaryDirectory
+from dataclasses import dataclass
+
+@dataclass
+class Dirs:
+    previous: Path
+    current: Path
 
 
 @contextmanager
+def nullcontext(return_value=None):
+    yield return_value
+
+@contextmanager
 def cd(subdirectory=None):
-    orginal_dir = os.getcwd()
-    if subdirectory is None:
-        tmpdir = subdirectory = mkdtemp(dir = orginal_dir)
-    else:
-        tmpdir = None
-    try:
-        os.chdir(subdirectory)
-        yield
-    finally:
-        os.chdir(orginal_dir)
-        if tmpdir: shutil.rmtree(tmpdir)
-        print("Getting out of context manager")
-
-
-
-
+    original_dir = os.getcwd()
+    cm = TemporaryDirectory(dir=original_dir) if subdirectory is None else nullcontext(subdirectory)
+    sub_dir_path = cm.args[0] if not isinstance(cm,TemporaryDirectory) else cm.name
+    obj = Dirs(Path(original_dir),Path(sub_dir_path))
+    with cm as temp_sub:
+        os.chdir(temp_sub)
+        try:
+            yield obj
+        finally:
+            os.chdir(original_dir)
+    
 
 
 
@@ -59,3 +64,8 @@ if __name__ == "__main__":
         print(Path.cwd())
 
     print(Path.cwd())
+
+
+    with cd() as dirs:
+        print('previous:', dirs.previous)
+        print('current:', dirs.current)
