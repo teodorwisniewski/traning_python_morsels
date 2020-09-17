@@ -16,18 +16,32 @@ class Dirs:
 def nullcontext(return_value=None):
     yield return_value
 
-@contextmanager
-def cd(subdirectory=None):
-    original_dir = os.getcwd()
-    cm = TemporaryDirectory(dir=original_dir) if subdirectory is None else nullcontext(subdirectory)
-    sub_dir_path = cm.args[0] if not isinstance(cm,TemporaryDirectory) else cm.name
-    obj = Dirs(Path(original_dir),Path(sub_dir_path))
-    with cm as temp_sub:
-        os.chdir(temp_sub)
-        try:
-            yield obj
-        finally:
-            os.chdir(original_dir)
+# @contextmanager
+# def cd(subdirectory=None):
+#     original_dir = os.getcwd()
+#     cm = TemporaryDirectory(dir=original_dir) if subdirectory is None else nullcontext(subdirectory)
+#     sub_dir_path = cm.args[0] if not isinstance(cm,TemporaryDirectory) else cm.name
+#     obj = Dirs(Path(original_dir),Path(sub_dir_path))
+#     with cm as temp_sub:
+#         os.chdir(temp_sub)
+#         try:
+#             yield obj
+#         finally:
+#             os.chdir(original_dir)
+
+class cd:
+    def __init__(self,subdirectory):
+        self.original_dir = os.getcwd()
+        self.cm = TemporaryDirectory(dir=self.original_dir) if subdirectory is None else nullcontext(subdirectory)
+        self.sub_dir_path = self.cm.args[0] if not isinstance(self.cm,TemporaryDirectory) else self.cm.name
+
+    def __enter__(self):
+        with self.cm as temp_sub:
+            os.chdir(temp_sub)
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        os.chdir(self.original_dir)
+
     
 
 
@@ -69,3 +83,10 @@ if __name__ == "__main__":
     with cd() as dirs:
         print('previous:', dirs.previous)
         print('current:', dirs.current)
+
+
+    tempdir = cd()
+    tempdir.enter()
+    print(Path.cwd())
+    tempdir.exit()
+    print(Path.cwd())
