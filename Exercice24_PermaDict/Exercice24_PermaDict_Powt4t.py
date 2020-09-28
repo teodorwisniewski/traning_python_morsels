@@ -1,38 +1,51 @@
-from collections import UserDict
 
-class PermaDict(UserDict):
-    
+
+class PermaDict(dict):
+
     def __init__(self,*args,silent=False,**kwargs):
-        self.silent = silent
+        self.silent= silent
         super().__init__(*args,**kwargs)
-        
 
-    def __setitem__(self,key,value):
-        if key in self and not self.silent:
-            raise KeyError(f"'{key}' already in dictionary.")
+    def __setitem__(self,key,val):
+
+        if key in self and self.silent is False:
+            raise KeyError(f"'{key}' already in dictionary.") 
         elif key not in self:
-            super().__setitem__(key,value)
-        
-        
-    def force_set(self,key,value):
-          super().__setitem__(key,value)      
+            super().__setitem__(key,val)
+            
+
+    def __getitem__(self,key):
+        return super().__getitem__(key)       
 
     def update(self,*args,force=False,**kwargs):
-        
-        if len(args)>0:
-            iterations = args[0] if isinstance(args[0],list) else args[0].items()
-            for key,value in iterations:
-                if force is True: self.force_set(key,value)
-                else: self[key] = value
-        if len(kwargs)>0:
-            for key,value in kwargs.items():
-                if force is True: self.force_set(key,value)
-                else: self[key] = value
 
+        if len(args)>0:
+            if isinstance(args[0],dict): iterating = args[0].items()
+            else: iterating = args[0]
+            
+            for key,val in iterating:
+                if force is False:
+                    self[key] = val
+                else:
+                    super().__setitem__(key,val)
+        else:
+            for key,val in kwargs.items():
+                if force is False:
+                    self[key] = val
+                else:
+                    super().__setitem__(key,val)                    
+
+    def force_set(self,key,val):
+        super().__setitem__(key,val)            
 
 
 
 if __name__ == "__main__":
+
+    d = PermaDict()
+
+    d[4] = "the number four"
+    print(d[4]== "the number four")
 
     locations = PermaDict([('Kojo', "Houston"), ('Tracy', "Toronto")])
     list(locations)
