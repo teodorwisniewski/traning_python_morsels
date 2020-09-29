@@ -10,9 +10,14 @@ class MutableString(UserString):
         else:
             return list_char[indexes]
     
-    def __setitem__(self,index:int,value:str)->None:
+    def __setitem__(self,index,value:str)->None:
         list_char = list(self.data)
         list_char[index] = value
+        self.data = ''.join(list_char)
+
+    def __delitem__(self,indexes):
+        list_char = list(self.data)
+        del list_char[indexes]
         self.data = ''.join(list_char)
 
 
