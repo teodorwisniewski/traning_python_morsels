@@ -3,7 +3,7 @@ from collections import UserString
 
 class MutableString(UserString):
 
-    def __getitem__(self,indexes)-> str:
+    def __getitem__(self,indexes):
         list_char = list(self.data)
         if isinstance(indexes,slice):
             return ''.join(list_char[indexes])    
@@ -62,3 +62,20 @@ if __name__ == "__main__":
     del greeting[-1]
     print(greeting)
     #'Hello world'
+
+# Bonus 2
+
+# For the second bonus, you should make sure various operations on your class return MutableString objects:
+
+    greeting = MutableString("Hello world!")
+    exclamation = greeting[-1]
+    hello = greeting[:5]
+    print(type(exclamation), type(hello))
+    # (<class 'MutableString'>, <class 'MutableString'>)
+    double_exclamation = exclamation + "!"
+    lowercased_hello = hello.lower()
+    print(type(double_exclamation), type(lowercased_hello))
+    # (<class 'MutableString'>, <class 'MutableString'>)
+    characters = list(double_exclamation)
+    print([type(c) for c in characters])
+    # [<class 'MutableString'>, <class 'MutableString'>]
