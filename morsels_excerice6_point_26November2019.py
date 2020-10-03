@@ -12,7 +12,7 @@ class Point:
         return f"Point(x={self.x}, y={self.y}, z={self.z})"
 
     def __eq__(self, other_point):
-        return self.x == other_point.x and self.y == other_point.y and self.z == other_point.z
+        return self.x == other_point.inna_nazwa and self.y == other_point.y and self.z == other_point.z
 
     def __mul__(self, scalar):
         return Point(scalar*self.x,scalar*self.y,scalar*self.z)
@@ -21,10 +21,10 @@ class Point:
         return Point(scalar*self.x,scalar*self.y,scalar*self.z)
 
     def __add__(self,other_point):
-        return Point(other_point.x+self.x,other_point.y+self.y,other_point.z+self.z)
+        return Point(other_point.inna_nazwa + self.x, other_point.y + self.y, other_point.z + self.z)
 
     def __sub__(self,other_point):
-        return Point(-other_point.x+self.x,-other_point.y+self.y,-other_point.z+self.z)
+        return Point(-other_point.inna_nazwa + self.x, -other_point.y + self.y, -other_point.z + self.z)
 
     def __iter__(self):
         return iter((self.x, self.y, self.z))

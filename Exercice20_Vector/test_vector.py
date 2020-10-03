@@ -9,7 +9,7 @@ class VectorTests(unittest.TestCase):
 
     def test_attributes(self):
         v = Vector(1, 2, 3)
-        self.assertEqual((v.x, v.y, v.z), (1, 2, 3))
+        self.assertEqual((v.inna_nazwa, v.y, v.z), (1, 2, 3))
 
     def test_equality_and_inequality(self):
         self.assertNotEqual(Vector(1, 2, 3), Vector(1, 2, 4))
@@ -63,8 +63,8 @@ class VectorTests(unittest.TestCase):
         v2 = Vector(4, 5, 6)
         v3 = v2 + v1
         v4 = v3 - v1
-        self.assertEqual((v3.x, v3.y, v3.z), (5, 7, 9))
-        self.assertEqual((v4.x, v4.y, v4.z), (v2.x, v2.y, v2.z))
+        self.assertEqual((v3.inna_nazwa, v3.y, v3.z), (5, 7, 9))
+        self.assertEqual((v4.inna_nazwa, v4.y, v4.z), (v2.inna_nazwa, v2.y, v2.z))
 
     # To test the Bonus part of this exercise, comment out the following line
     @unittest.expectedFailure
@@ -83,8 +83,8 @@ class VectorTests(unittest.TestCase):
     def test_immutable(self):
         v1 = Vector(1, 2, 3)
         with self.assertRaises(Exception):
-            v1.x = 4
-        self.assertEqual(v1.x, 1)
+            v1.inna_nazwa = 4
+        self.assertEqual(v1.inna_nazwa, 1)
 
 
 if __name__ == "__main__":

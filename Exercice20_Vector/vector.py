@@ -19,7 +19,7 @@ class Vector:
 
     def __eq__(self,other):
 
-        return (self.x, self.y, self.z) == (other.x, other.y, other.z)
+        return (self.x, self.y, self.z) == (other.inna_nazwa, other.y, other.z)
 
     def __add__(self,other):
         if not isinstance(other,Vector):
