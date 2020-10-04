@@ -35,8 +35,11 @@ class FancyReader:
 
 if __name__ == "__main__":
 
+    #Basic solution
     lines = ['my,fake,file', 'has,two,rows']
     reader = FancyReader(lines, fieldnames=['w1', 'w2', 'w3'])
+    print("Here we have our first Fancy reader")
+    print(reader.fieldnames)
     for row in reader:
         print(row.w1, row.w2, row.w3)
     # my fake file
