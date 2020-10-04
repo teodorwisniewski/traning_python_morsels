@@ -39,13 +39,8 @@ if __name__ == "__main__":
     reader = FancyReader(lines, fieldnames=['w1', 'w2', 'w3'])
     for row in reader:
         print(row.w1, row.w2, row.w3)
-    # ...
-    # my
-    # fake
-    # file
-    # has
-    # two
-    # rows
+    # my fake file
+    # has two rows
 
     # Bonus 1
     #
@@ -65,10 +60,5 @@ if __name__ == "__main__":
     reader = FancyReader(lines)
     for row in reader:
         print(row.w1, row.w2, row.w3)
-    # ...
-    # my
-    # fake
-    # file
-    # has
-    # two
-    # rows
+    # my fake file
+    # has two rows
