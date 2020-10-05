@@ -42,6 +42,7 @@ if __name__ == "__main__":
     print(reader.fieldnames)
     for row in reader:
         print(row.w1, row.w2, row.w3)
+    # Expected output
     # my fake file
     # has two rows
 
