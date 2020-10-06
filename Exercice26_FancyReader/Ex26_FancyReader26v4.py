@@ -6,6 +6,16 @@ class Row:
         for items in kwargs.items():
             setattr(self,*items)
 
+    def __iter__(self):
+        yield from self.__dict__.values()
+
+    def __repr__(self):
+        attr = ", ".join([
+            f"{key}={repr(value)}"
+            for key,value in self.__dict__.items()
+        ])
+        return f"Row({attr})"
+
 
 def FancyReader(iterable,fieldnames=None,**kwargs):
     reader_iter = csv.reader(iterable)
@@ -32,7 +42,7 @@ if __name__ == "__main__":
     row = next(reader)
     print(row)
     # Row(w1='my', w2='fake', w3='file')
-    print(repr(row )== "Row(w1='my', w2='fake', w3='file')")
+    print(repr(row ) == "Row(w1='my', w2='fake', w3='file')")
     w1, w2, w3 = row
     print(w3)
     # 'file'
