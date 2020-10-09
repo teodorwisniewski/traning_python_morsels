@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b2ad0e30-be3f-4d08-91b1-0c8c7e75fe4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python_Morsels.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercice26_FancyReader/Ex_FancyReaderv4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercice26_FancyReader/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercice26_FancyReader/funkcja.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercice26_FancyReader/pytania_na_rozmowie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/traning_python_morsels.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/traning_python_morsels.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,8 +51,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wisniewskit\Desktop\Trening\Python_training\Python_2020\git\traning_python_morsels\Exercice26_FancyReader" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.pytania_na_rozmowie">
     <configuration name="Ex26_FancyReaderv3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="traning_python_morsels" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,8 +80,69 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="funkcja" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="traning_python_morsels" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice26_FancyReader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercice26_FancyReader/funkcja.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytania_na_rozmowie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="traning_python_morsels" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice26_FancyReader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercice26_FancyReader/pytania_na_rozmowie.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in tests_FancyReader" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="traning_python_morsels" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice26_FancyReader/tests_FancyReader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Exercice26_FancyReader/tests_FancyReader&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pytania_na_rozmowie" />
+        <item itemvalue="Python.funkcja" />
+        <item itemvalue="Python tests.pytest in tests_FancyReader" />
         <item itemvalue="Python.Ex26_FancyReaderv3" />
       </list>
     </recent_temporary>
@@ -64,45 +156,91 @@
       <option name="presentableId" value="Default" />
       <updated>1601883866779</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding tests to Exercice">
+      <created>1602237131096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602237131096</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding tests to Exercice" />
+    <MESSAGE value="interview quiestions" />
+    <option name="LAST_COMMIT_MESSAGE" value="interview quiestions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601884176655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601884176655" />
-    <state width="1515" height="255" key="GridCell.Tab.0.bottom" timestamp="1601887214115">
+    <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602246239229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.0.center" timestamp="1601887214115">
+    <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602246239229" />
+    <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1602240892841" />
+    <state width="1515" height="222" key="GridCell.Tab.0.bottom" timestamp="1602247380965">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.0.left" timestamp="1601887214115">
+    <state width="1515" height="222" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602247380965" />
+    <state width="1515" height="253" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="222" key="GridCell.Tab.0.center" timestamp="1602247380965">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.0.right" timestamp="1601887214115">
+    <state width="1515" height="222" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602247380965" />
+    <state width="1515" height="253" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="222" key="GridCell.Tab.0.left" timestamp="1602247380965">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.1.bottom" timestamp="1601887214115">
+    <state width="1515" height="222" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602247380965" />
+    <state width="1515" height="253" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="222" key="GridCell.Tab.0.right" timestamp="1602247380965">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.1.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.1.center" timestamp="1601887214115">
+    <state width="1515" height="222" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602247380965" />
+    <state width="1515" height="253" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="253" key="GridCell.Tab.1.bottom" timestamp="1602244881646">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.1.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.1.left" timestamp="1601887214115">
+    <state width="1515" height="420" key="GridCell.Tab.1.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1515" height="253" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="253" key="GridCell.Tab.1.center" timestamp="1602244881646">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.1.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
-    <state width="1515" height="255" key="GridCell.Tab.1.right" timestamp="1601887214115">
+    <state width="1515" height="420" key="GridCell.Tab.1.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1515" height="253" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="253" key="GridCell.Tab.1.left" timestamp="1602244881646">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="255" key="GridCell.Tab.1.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1601887214115" />
+    <state width="1515" height="420" key="GridCell.Tab.1.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1515" height="253" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state width="1515" height="253" key="GridCell.Tab.1.right" timestamp="1602244881646">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="420" key="GridCell.Tab.1.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1515" height="253" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
+    <state x="-1444" y="158" key="SettingsEditor" timestamp="1602233001166">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1444" y="158" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602233001166" />
+    <state x="431" y="155" key="search.everywhere.popup" timestamp="1602246241982">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" key="search.everywhere.popup/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602246241982" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -126,6 +264,26 @@
           <url>file://$PROJECT_DIR$/Exercice26_FancyReader/Ex26_FancyReaderv3.py</url>
           <line>108</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice26_FancyReader/tests_FancyReader/test_fancy_reader.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice26_FancyReader/tests_FancyReader/test_fancy_reader.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice26_FancyReader/funkcja.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice26_FancyReader/pytania_na_rozmowie.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
