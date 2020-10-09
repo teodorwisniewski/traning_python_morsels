@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ad0e30-be3f-4d08-91b1-0c8c7e75fe4e" name="Default Changelist" comment="" />
+    <list default="true" id="b2ad0e30-be3f-4d08-91b1-0c8c7e75fe4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602255393049</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="re,oving workspace.xml">
+      <created>1602255746208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602255746208</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +222,8 @@
     <MESSAGE value="interview quiestions" />
     <MESSAGE value="workspace.xml update" />
     <MESSAGE value="updating gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating gitignore" />
+    <MESSAGE value="re,oving workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="re,oving workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601884176655">
@@ -267,10 +279,10 @@
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1444" y="158" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602233001166" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602255474150">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602255917094">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602255474150" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602255917094" />
     <state x="431" y="155" key="search.everywhere.popup" timestamp="1602246241982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
