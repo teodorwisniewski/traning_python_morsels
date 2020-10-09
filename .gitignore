@@ -252,3 +252,4 @@ my_venv/
 /venv/Lib/site-packages/colorama/win32.py
 /venv/Lib/site-packages/colorama/winterm.py
 /venv/Lib/site-packages/py/xml.pyi
+.idea/
