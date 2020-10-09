@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602255241586</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updating gitignore">
+      <created>1602255393049</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602255393049</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,9 +209,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding tests to Exercice" />
     <MESSAGE value="interview quiestions" />
-    <MESSAGE value="updating gitignore" />
     <MESSAGE value="workspace.xml update" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml update" />
+    <MESSAGE value="updating gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601884176655">
@@ -260,10 +267,10 @@
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1444" y="158" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602233001166" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602255271571">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602255474150">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602255271571" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602255474150" />
     <state x="431" y="155" key="search.everywhere.popup" timestamp="1602246241982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
