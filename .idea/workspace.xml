@@ -22,6 +22,7 @@
     <list default="true" id="b2ad0e30-be3f-4d08-91b1-0c8c7e75fe4e" name="Default Changelist" comment="27 &#9;CyclicList exercices classes, generators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <recent name="C:\Users\wisniewskit\Desktop\Trening\Python_training\Python_2020\git\traning_python_morsels\Exercice26_FancyReader" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pytania_na_rozmowie">
+  <component name="RunManager" selected="Python tests.pytest in tests">
     <configuration name="Ex26_FancyReaderv3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="traning_python_morsels" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,6 +119,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="traning_python_morsels" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice27_CyclicList/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Exercice27_CyclicList/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in tests_FancyReader" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="traning_python_morsels" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,6 +153,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in tests" />
         <item itemvalue="Python.pytania_na_rozmowie" />
         <item itemvalue="Python.funkcja" />
         <item itemvalue="Python tests.pytest in tests_FancyReader" />
@@ -208,7 +226,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602256181416</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="CyclicList base problem">
+      <created>1602511907052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602511907052</updated>
+    </task>
+    <task id="LOCAL-00010" summary="__init__.py for Ex27 module">
+      <created>1602512025360</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602512025360</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test for a base problem 27">
+      <created>1602512091694</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602512091694</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +269,10 @@
     <MESSAGE value="updating gitignore" />
     <MESSAGE value="re,oving workspace.xml" />
     <MESSAGE value="27 &#9;CyclicList exercices classes, generators" />
-    <option name="LAST_COMMIT_MESSAGE" value="27 &#9;CyclicList exercices classes, generators" />
+    <MESSAGE value="CyclicList base problem" />
+    <MESSAGE value="__init__.py for Ex27 module" />
+    <MESSAGE value="test for a base problem 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for a base problem 27" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601884176655">
@@ -242,45 +284,45 @@
     </state>
     <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602246239229" />
     <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1602240892841" />
-    <state width="1515" height="222" key="GridCell.Tab.0.bottom" timestamp="1602256226664">
+    <state width="1500" height="249" key="GridCell.Tab.0.bottom" timestamp="1602513880655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="222" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602256226664" />
+    <state width="1500" height="249" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
     <state width="1515" height="253" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="222" key="GridCell.Tab.0.center" timestamp="1602256226654">
+    <state width="1500" height="249" key="GridCell.Tab.0.center" timestamp="1602513880655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="222" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602256226654" />
+    <state width="1500" height="249" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
     <state width="1515" height="253" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="222" key="GridCell.Tab.0.left" timestamp="1602256226654">
+    <state width="1500" height="249" key="GridCell.Tab.0.left" timestamp="1602513880655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="222" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602256226654" />
+    <state width="1500" height="249" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
     <state width="1515" height="253" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="222" key="GridCell.Tab.0.right" timestamp="1602256226654">
+    <state width="1500" height="249" key="GridCell.Tab.0.right" timestamp="1602513880655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="222" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602256226654" />
+    <state width="1500" height="249" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
     <state width="1515" height="253" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="253" key="GridCell.Tab.1.bottom" timestamp="1602244881646">
+    <state width="1500" height="249" key="GridCell.Tab.1.bottom" timestamp="1602513883348">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="420" key="GridCell.Tab.1.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1500" height="249" key="GridCell.Tab.1.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
     <state width="1515" height="253" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="253" key="GridCell.Tab.1.center" timestamp="1602244881646">
+    <state width="1500" height="249" key="GridCell.Tab.1.center" timestamp="1602513883348">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="420" key="GridCell.Tab.1.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1500" height="249" key="GridCell.Tab.1.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
     <state width="1515" height="253" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="253" key="GridCell.Tab.1.left" timestamp="1602244881646">
+    <state width="1500" height="249" key="GridCell.Tab.1.left" timestamp="1602513883348">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="420" key="GridCell.Tab.1.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1500" height="249" key="GridCell.Tab.1.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
     <state width="1515" height="253" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1515" height="253" key="GridCell.Tab.1.right" timestamp="1602244881646">
+    <state width="1500" height="249" key="GridCell.Tab.1.right" timestamp="1602513883348">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="420" key="GridCell.Tab.1.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602235559665" />
+    <state width="1500" height="249" key="GridCell.Tab.1.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
     <state width="1515" height="253" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
     <state x="-1444" y="158" key="SettingsEditor" timestamp="1602233001166">
       <screen x="-1920" y="0" width="1920" height="1050" />
