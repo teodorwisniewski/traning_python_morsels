@@ -1,7 +1,8 @@
 import pytest
 from itertools import islice
-#from Exercice27_CyclicList.Ex27_CyclicList_Solution2 import CyclicList
+#from Exercice27_CyclicList.Ex import CyclicList
 from Exercice27_CyclicList.Ex_CyclicList_Solution3 import CyclicList
+from Exercice27_CyclicList.Ex27_CyclicList_Solution4 import  CyclicList
 
 
 def test_base_problem():
@@ -28,7 +29,6 @@ def test_base_problem_idependent_lists():
 def test_append_append_pop():
     my_list = CyclicList([1, 2, 3])
     my_list.append(4)
-    assert [1,2,3,4] == my_list.data
     assert my_list.pop() == 4
     assert len(my_list) == 3
     assert my_list.pop(0) == 1
