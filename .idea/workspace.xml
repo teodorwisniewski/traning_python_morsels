@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2ad0e30-be3f-4d08-91b1-0c8c7e75fe4e" name="Default Changelist" comment="27 &#9;CyclicList exercices classes, generators">
+      <change afterPath="$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList_Solution2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercice27_CyclicList/Ex_CyclicList_Solution3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,27 +57,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest in tests">
-    <configuration name="Ex26_FancyReaderv3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="traning_python_morsels" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice26_FancyReader" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercice26_FancyReader/Ex26_FancyReaderv3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="funkcja" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="traning_python_morsels" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +99,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rozmowa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="traning_python_morsels" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice27_CyclicList" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercice27_CyclicList/rozmowa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_Ex27_CyclicList.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="traning_python_morsels" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice27_CyclicList/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="traning_python_morsels" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,29 +152,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in tests_FancyReader" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="traning_python_morsels" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercice26_FancyReader/tests_FancyReader" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Exercice26_FancyReader/tests_FancyReader&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in tests" />
+        <item itemvalue="Python tests.pytest in test_Ex27_CyclicList.py" />
+        <item itemvalue="Python.rozmowa" />
         <item itemvalue="Python.pytania_na_rozmowie" />
         <item itemvalue="Python.funkcja" />
-        <item itemvalue="Python tests.pytest in tests_FancyReader" />
-        <item itemvalue="Python.Ex26_FancyReaderv3" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +248,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602512091694</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test for a base problem 27, creating iterators">
+      <created>1602513946942</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602513946942</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rozmowa kwalifikacyjna global variable">
+      <created>1602673775761</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602673775761</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +287,9 @@
     <MESSAGE value="CyclicList base problem" />
     <MESSAGE value="__init__.py for Ex27 module" />
     <MESSAGE value="test for a base problem 27" />
-    <option name="LAST_COMMIT_MESSAGE" value="test for a base problem 27" />
+    <MESSAGE value="test for a base problem 27, creating iterators" />
+    <MESSAGE value="rozmowa kwalifikacyjna global variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="rozmowa kwalifikacyjna global variable" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601884176655">
@@ -284,54 +301,54 @@
     </state>
     <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602246239229" />
     <state x="534" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1602240892841" />
-    <state width="1500" height="249" key="GridCell.Tab.0.bottom" timestamp="1602513880655">
+    <state width="1502" height="261" key="GridCell.Tab.0.bottom" timestamp="1602675798120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
+    <state width="1502" height="261" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798120" />
     <state width="1515" height="253" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.0.center" timestamp="1602513880655">
+    <state width="1502" height="261" key="GridCell.Tab.0.center" timestamp="1602675798110">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
+    <state width="1502" height="261" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798110" />
     <state width="1515" height="253" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.0.left" timestamp="1602513880655">
+    <state width="1502" height="261" key="GridCell.Tab.0.left" timestamp="1602675798110">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
+    <state width="1502" height="261" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798110" />
     <state width="1515" height="253" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.0.right" timestamp="1602513880655">
+    <state width="1502" height="261" key="GridCell.Tab.0.right" timestamp="1602675798120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513880655" />
+    <state width="1502" height="261" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798120" />
     <state width="1515" height="253" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.1.bottom" timestamp="1602513883348">
+    <state width="1502" height="261" key="GridCell.Tab.1.bottom" timestamp="1602675798120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.1.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
+    <state width="1502" height="261" key="GridCell.Tab.1.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798120" />
     <state width="1515" height="253" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.1.center" timestamp="1602513883348">
+    <state width="1502" height="261" key="GridCell.Tab.1.center" timestamp="1602675798120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.1.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
+    <state width="1502" height="261" key="GridCell.Tab.1.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798120" />
     <state width="1515" height="253" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.1.left" timestamp="1602513883348">
+    <state width="1502" height="261" key="GridCell.Tab.1.left" timestamp="1602675798120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.1.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
+    <state width="1502" height="261" key="GridCell.Tab.1.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798120" />
     <state width="1515" height="253" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
-    <state width="1500" height="249" key="GridCell.Tab.1.right" timestamp="1602513883348">
+    <state width="1502" height="261" key="GridCell.Tab.1.right" timestamp="1602675798120">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1500" height="249" key="GridCell.Tab.1.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602513883348" />
+    <state width="1502" height="261" key="GridCell.Tab.1.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602675798120" />
     <state width="1515" height="253" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1602244881646" />
     <state x="-1444" y="158" key="SettingsEditor" timestamp="1602233001166">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1444" y="158" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602233001166" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602256197614">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602514110640">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602256197614" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602514110640" />
     <state x="431" y="155" key="search.everywhere.popup" timestamp="1602246241982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -380,7 +397,67 @@
           <line>4</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList_Solution2.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/tests/test_Ex27_CyclicList.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Exercice27_CyclicList/Ex27_CyclicList_Solution2.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="self.index" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
