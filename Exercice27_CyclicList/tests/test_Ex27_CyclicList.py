@@ -21,3 +21,15 @@ def test_base_problem_idependent_lists():
     assert next(i1) == 2
     assert next(i2) == 1
     assert next(i2) == 2
+
+
+# bonus 1 tests
+
+def test_append_append_pop():
+    my_list = CyclicList([1, 2, 3])
+    my_list.append(4)
+    assert [1,2,3,4] == my_list.data
+    assert my_list.pop() == 4
+    assert len(my_list) == 3
+    assert my_list.pop(0) == 1
+    assert len(my_list) == 2
