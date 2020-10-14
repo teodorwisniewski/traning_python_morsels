@@ -1,6 +1,7 @@
 import pytest
 from itertools import islice
-from Exercice27_CyclicList.Ex27_CyclicList import CyclicList
+#from Exercice27_CyclicList.Ex27_CyclicList_Solution2 import CyclicList
+from Exercice27_CyclicList.Ex_CyclicList_Solution3 import CyclicList
 
 
 def test_base_problem():
