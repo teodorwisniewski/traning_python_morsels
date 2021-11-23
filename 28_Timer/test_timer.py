@@ -1,7 +1,7 @@
 from time import perf_counter
 import unittest
 
-from timer import Timer
+from Exercice28_timer_basic_problem import Timer
 
 
 class TimerTests(unittest.TestCase):
